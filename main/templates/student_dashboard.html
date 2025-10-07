@@ -1,0 +1,14 @@
+<h2>Student Dashboard</h2>
+<h3>Attendance</h3>
+<ul>
+{% for a in attendance %}
+    <li>{{ a.date }} — {{ a.present }}</li>
+{% endfor %}
+</ul>
+
+<h3>Grades</h3>
+<ul>
+{% for g in grades %}
+    <li>{{ g.subject }}: {{ g.marks }}</li>
+{% endfor %}
+</ul>
